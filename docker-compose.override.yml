@@ -4,3 +4,8 @@ services:
     php-fpm:
         volumes:
             - ./:/usr/share/nginx/html
+
+    node:
+        volumes:
+            - ./:/usr/share/nginx/html
+        tty: true
