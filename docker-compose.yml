@@ -10,3 +10,6 @@ services:
         build:
             context: .
             dockerfile: ./docker/node/Dockerfile
+
+    nginx:
+        image: nginx:1.21-alpine

@@ -9,3 +9,10 @@ services:
         volumes:
             - ./:/usr/share/nginx/html
         tty: true
+
+    nginx:
+        ports:
+            - "8800:80"
+        volumes:
+            - ./public:/usr/share/nginx/html/public:ro
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d:ro
